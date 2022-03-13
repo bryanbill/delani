@@ -26,12 +26,3 @@ elements.forEach((element) => {
 });
 
 
-const clearForm = () => {
-    document.getElementById('mce-USERNAME').value = '';
-    document.getElementById('mce-EMAIL').value = '';
-    document.getElementById('mce-MESSAGE').value = '';
-}
-document.getElementById('mc-embedded-subscribe').addEventListener('click', (event) => {
-    event.preventDefault();
-    clearForm();
-})
