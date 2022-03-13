@@ -10,12 +10,30 @@
 })(jQuery);
 var $mcj = jQuery.noConflict(true);
 
+const elements = ['design', 'development', 'product'];
+
+elements.forEach((element) => {
+    $('.' + element).click(function () {
+        $('.' + element).hide()
+        $('#' + element).show()
+        $('#' + element).click(function () {
+            $('#' + element).hide()
+            $('.' + element).show()
+
+        })
+
+    })
+});
+
+
 const clearForm = () => {
-    document.getElementById('mce-USERNAME').value = null;
-    document.getElementById('mce-EMAIL').value = null;
-    document.getElementById('mce-MESSAGE').value = null;
+    document.getElementById('mce-USERNAME').value = '';
+    document.getElementById('mce-EMAIL').value = '';
+    document.getElementById('mce-MESSAGE').value = '';
 }
-document.getElementById('mc-embedded-subscribe').addEventListener('click', (event) => {
-    event.preventDefault();
-    clearForm();
-})
+// document.getElementById('mc-embedded-subscribe').addEventListener('click', (event) => {
+//     event.preventDefault();
+//     clearForm();
+// })
+
+document.getEle
