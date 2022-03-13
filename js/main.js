@@ -31,9 +31,7 @@ const clearForm = () => {
     document.getElementById('mce-EMAIL').value = '';
     document.getElementById('mce-MESSAGE').value = '';
 }
-// document.getElementById('mc-embedded-subscribe').addEventListener('click', (event) => {
-//     event.preventDefault();
-//     clearForm();
-// })
-
-document.getEle
+document.getElementById('mc-embedded-subscribe').addEventListener('click', (event) => {
+    event.preventDefault();
+    clearForm();
+})
