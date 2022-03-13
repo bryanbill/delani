@@ -17,3 +17,9 @@ body {
   background-position: center center;
   color: white;
 }
+.services {
+  background: url("../assets/images/s_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
