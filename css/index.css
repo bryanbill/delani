@@ -1,3 +1,6 @@
+/* Import Montserrat */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,7 @@
 html,
 body {
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
 }
 .hero {
