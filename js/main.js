@@ -10,8 +10,12 @@
 })(jQuery);
 var $mcj = jQuery.noConflict(true);
 
-const clearForm = ()=>{
+const clearForm = () => {
     document.getElementById('mce-USERNAME').value = null;
     document.getElementById('mce-EMAIL').value = null;
     document.getElementById('mce-MESSAGE').value = null;
 }
+document.getElementById('mc-embedded-subscribe').addEventListener('click', (event) => {
+    event.preventDefault();
+    clearForm();
+})

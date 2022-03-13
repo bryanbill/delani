@@ -289,22 +289,46 @@
               name="subscribe"
               id="mc-embedded-subscribe"
               class="btn btn-outline-white border-3 mx-auto border-white btn-block text-white"
+              data-toggle="modal"
+              data-target="#mce-responses"
             >
               Submit
             </button>
           </div>
 
-          <div id="mce-responses" class="clear">
-            <div
-              class="response"
-              id="mce-error-response"
-              style="display: none"
-            ></div>
-            <div
-              class="response"
-              id="mce-success-response"
-              style="display: none"
-            ></div>
+          <div
+            id="mce-responses"
+            class="clear modal fade"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div
+                    class="response"
+                    id="mce-error-response"
+                    style="display: none"
+                  ></div>
+                  <div
+                    class="response"
+                    id="mce-success-response"
+                    style="display: none"
+                  ></div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
           <div style="position: absolute; left: -5000px" aria-hidden="true">
             <input
@@ -319,19 +343,18 @@
     </section>
     <footer>
       <div class="d-flex justify-content-around w-50 mx-auto flex-wrap">
-        <img class="img-fluid" src="./assets/icons/behance.png" alt="" />
+        <img class="img-fluid" src="./assets/icons/twitter.png" alt="" />
         <img class="img-fluid" src="./assets/icons/dribble.png" alt="" />
         <img class="img-fluid" src="./assets/icons/facebook.png" alt="" />
-        <img class="img-fluid" src="./assets/icons/flickr.png" alt="" />
         <img class="img-fluid" src="./assets/icons/g_plus.png" alt="" />
-        <img class="img-fluid" src="./assets/icons/pinterest.png" alt="" />
         <img class="img-fluid" src="./assets/icons/skype.png" alt="" />
         <img class="img-fluid" src="./assets/icons/stumble_upon.png" alt="" />
-        <img class="img-fluid" src="./assets/icons/twitter.png" alt="" />
-        <img class="img-fluid" src="./assets/icons/you_tube.png" alt="" />
+        <img class="img-fluid" src="./assets/icons/behance.png" alt="" />
+        <img class="img-fluid" src="./assets/icons/pinterest.png" alt="" />
+        <img class="img-fluid" src="./assets/icons/flickr.png" alt="" />
       </div>
       <div class="my-2">
-        <p class="fs-5 text-center">Delani Studio<br>2019</p>
+        <p class="fs-5 text-center">Delani Studio<br />2019</p>
       </div>
     </footer>
 
