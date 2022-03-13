@@ -9,3 +9,9 @@
     ftypes[2] = "text";
 })(jQuery);
 var $mcj = jQuery.noConflict(true);
+
+const clearForm = ()=>{
+    document.getElementById('mce-USERNAME').value = null;
+    document.getElementById('mce-EMAIL').value = null;
+    document.getElementById('mce-MESSAGE').value = null;
+}
