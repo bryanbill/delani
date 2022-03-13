@@ -30,11 +30,15 @@ body {
 }
 .overlay {
   top: 0;
-
   background: rgba(0, 0, 0, 0.3);
-
   transition: all 0.5s;
 }
 .overlay:hover {
   opacity: 1 !important;
+}
+.contact {
+  background: url("../assets/images/c_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
